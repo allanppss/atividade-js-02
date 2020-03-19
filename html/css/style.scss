@@ -171,15 +171,22 @@ section.filmes {
 
         div {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: -150px;
+            left: -500px;
             width: 100%;
             opacity: 0;
             visibility: hidden;
+            transform: scale(0.5) rotate(45deg);
+            @include animaExpo();
 
             &.ativo {
+                top: 0;
+                left: 0;
                 opacity: 1;
                 visibility: visible;
+                transform: scale(1) rotate(0deg);
+                transition-duration: 1000ms;
+                transition-delay: 500ms;
             }
 
             h2 {
