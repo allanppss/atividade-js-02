@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmes</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -98,7 +102,7 @@
                 </div>
             </div>
         </div>
-        <div class="thumbs">
+        <div onclick="next()" class="thumbs">
             <div class="item1 flex flex-cv flex-ch ativo">
                 <h3>Dexter</h3>
             </div>
@@ -110,6 +114,7 @@
             </div>
         </div>
     </section>
+    <script src="js/navegacao.js"></script>
 </body>
 
 </html>
