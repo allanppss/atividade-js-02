@@ -126,17 +126,25 @@ section.filmes {
         position: absolute;
 
         div {
-            width: 100%;
-            height: 100%;
             position: absolute;
-            top: 0;
-            left: 0;
             opacity: 0;
             visibility: hidden;
+            width: 70%;
+            height: 40%;
+            top: 100%;
+            left: 100%;
+            transform: rotate(45deg);
+            @include animaExpo();
+            transition-duration: 1000ms;
 
             &.ativo {
                 opacity: 1;
                 visibility: visible;
+                transform: rotate(0deg);
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
             }
 
             &.item1 {

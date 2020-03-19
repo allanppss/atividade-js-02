@@ -18,7 +18,9 @@ function next() {
 
     $('.thumbs div').removeClass('ativo');
     $('.thumbs div').removeClass('hover');
+    $('.bgs div').removeClass('ativo');
 
     $('.thumbs .item' + itemAtual).addClass('ativo');
     $('.thumbs .item' + itemAtualHover).addClass('hover');
+    $('.bgs .item' + itemAtual).addClass('ativo');
 }
