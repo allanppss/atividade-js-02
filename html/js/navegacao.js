@@ -19,10 +19,11 @@ function next() {
     
 
     $('.bgs div').removeClass('ativo');
-
-    $('.txts-bgs div').removeClass('ativo');
-
     $('.bgs .item' + itemAtual).addClass('ativo');
 
+    $('.txts-bgs div').removeClass('ativo');
     $('.txts-bgs .item' + itemAtual).addClass('ativo');
+
+    $('.conteudos div').removeClass('ativo');
+    $('.conteudos .item' + itemAtual).addClass('ativo');
 }
